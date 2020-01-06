@@ -5,8 +5,8 @@
   --border-color: var(--background-1);
   --highlight-color: #0b4a73;
   --highlight-contrast: #083c5a;
-  --selected: #37373d;
-  --selected-color: #314136;
+  --selected: rgba(123, 167, 138, .99);
+  --selected-dark: #314136;
   --field-color: #3c3c3c;
   --sn-stylekit-info-color: #7ba78a;
   --sn-stylekit-info-contrast-color: #25412f;
@@ -52,7 +52,7 @@
 }
 
 #notes-column .note progress[value]::-webkit-progress-value, .notes .note progress[value]::-webkit-progress-value {
-  background-color: var(--selected-color);
+  background-color: var(--selected-dark);
 }
 
 #notes-column .note.selected progress[value]::-webkit-progress-value, .notes .note.selected progress[value]::-webkit-progress-value {
@@ -99,8 +99,8 @@
 #editor-title-bar > .title > .input::selection,
 input::selection, textarea::selection,
 *::selection {
-  background: var(--sn-stylekit-info-color) !important;
-  color: var(--foreground-color) !important;
+  background: var(--selected) !important;
+  color: var(--background-2) !important;
 }
 
 /*# sourceMappingURL=dist.css.map */
