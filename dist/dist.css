@@ -61,7 +61,11 @@
 
 #editor,
 .redactor-box.redactor-styles-on .redactor-toolbar,
-.CodeMirror {
+.CodeMirror,
+#plus-editor .note-editor.fullscreen,
+#plus-editor .note-editor,
+#plus-editor .panel-default > .panel-heading,
+#plus-editor .note-editor.note-frame.fullscreen .note-editable, #plus-editor .note-editor.note-frame.fullscreen .panel-body {
   background-color: var(--background-2);
 }
 
