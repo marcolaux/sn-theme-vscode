@@ -1,0 +1,1 @@
+# sn-theme-vscode
