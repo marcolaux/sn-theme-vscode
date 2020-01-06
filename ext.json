@@ -1,0 +1,9 @@
+{
+    "identifier": "sn-vscode-theme",
+    "name": "VS Code Theme",
+    "content_type": "SN|Theme",
+    "area": "themes",
+    "version": "1.0.1",
+    "download_url": "https://marcaux.de/sn/vscode-theme/sn-vscode-theme.zip",
+    "url": "https://marcaux.de/sn/vscode-theme/dist/dist.css"
+}
