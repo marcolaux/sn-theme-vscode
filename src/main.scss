@@ -109,7 +109,9 @@
 #editor-title-bar > .title > .input:focus{
   background-color: var(--background-1);
 }
-#editor-title-bar > .title > .input::selection{
-  background: var(--highlight-color) !important;
-  color: var(--background-1);
+#editor-title-bar > .title > .input::selection,
+input::selection, textarea::selection,
+*::selection{
+  background: var(--sn-stylekit-info-color) !important;
+  color: var(--foreground-color) !important;
 }
