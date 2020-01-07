@@ -119,3 +119,12 @@ input::selection, textarea::selection,
   background: var(--selected) !important;
   color: var(--background-2) !important;
 }
+
+.redactor-modal button.redactor-button-unstyled{
+  color: var(--sn-stylekit-contrast-foreground-color) !important;
+}
+
+.redactor-modal button.redactor-button-danger{
+  color: var(--sn-stylekit-danger-color) !important;
+  background-color: var(--sn-stylekit-danger-contrast-color) !important;
+}
