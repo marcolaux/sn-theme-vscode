@@ -3,7 +3,7 @@
     "name": "VS Code Theme",
     "content_type": "SN|Theme",
     "area": "themes",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "download_url": "https://marcaux.de/sn/vscode-theme/sn-vscode-theme.zip",
     "url": "https://marcaux.de/sn/vscode-theme/dist/dist.css",
     "latest_url": "https://marcaux.de/sn/vscode-theme/ext.json",

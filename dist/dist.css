@@ -62,6 +62,7 @@
 #editor,
 .redactor-box.redactor-styles-on .redactor-toolbar,
 .CodeMirror,
+.editor-content, #editor-content,
 #plus-editor .note-editor.fullscreen,
 #plus-editor .note-editor,
 #plus-editor .panel-default > .panel-heading,
