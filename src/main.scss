@@ -103,7 +103,9 @@
 .sn-component .sk-button.sk-secondary-contrast, .sn-component .sk-secondary-contrast.sk-box, .sn-component .sk-box.sk-secondary-contrast, .sn-component .sk-circle.sk-secondary-contrast,
 .sn-component .sk-button.sk-secondary-contrast:before, .sn-component .sk-secondary-contrast.sk-box:before, .sn-component .sk-box.sk-secondary-contrast:before, .sn-component .sk-circle.sk-secondary-contrast:before,
 .sn-component .sk-button.contrast, .sn-component .contrast.sk-box, .sn-component .sk-box.contrast, .sn-component .sk-circle.contrast,
-.sn-component .sk-button.contrast:before, .sn-component .contrast.sk-box:before, .sn-component .sk-box.contrast:before, .sn-component .sk-circle.contrast:before{
+.sn-component .sk-button.contrast:before, .sn-component .contrast.sk-box:before, .sn-component .sk-box.contrast:before, .sn-component .sk-circle.contrast:before,
+.create-task-input,
+.task .checkmark{
   background-color: var(--field-color);
 }
 
