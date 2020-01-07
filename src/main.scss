@@ -131,3 +131,31 @@ input::selection, textarea::selection,
   color: var(--sn-stylekit-danger-color) !important;
   background-color: var(--sn-stylekit-danger-contrast-color) !important;
 }
+
+.task{
+  .checkmark{
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    top: 2px;
+
+    &:after{
+      left: 5px;
+      top: 1px;
+      width: 5px;
+      height: 10px;
+    }
+  }
+  
+  .checkbox-container{
+    width: 25px;
+    padding: 0;
+    margin: 0;
+  }
+}
+.task-section a{
+  font-size: 12px;
+}
+#completed-tasks{
+  margin-bottom: 10px;
+}
