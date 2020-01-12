@@ -113,8 +113,12 @@
 #editor-title-bar > .title > .input{
   color: var(--foreground-color);
 }
-#editor-title-bar > .title > .input:focus{
-  background-color: var(--background-1);
+#editor-title-bar > .title > .input:focus,
+input:focus,
+textarea:focus,
+.task textarea.task-input-textarea:focus,
+.task .checkbox-container input:focus+.checkmark{
+  background-color: var(--field-color);
 }
 #editor-title-bar > .title > .input::selection,
 input::selection, textarea::selection,
@@ -133,24 +137,34 @@ input::selection, textarea::selection,
 }
 
 .task{
+  margin-bottom: 15px;
+
   .checkmark{
-    height: 15px;
-    width: 15px;
+    height: 30px;
+    width: 30px;
     margin: 0;
-    top: 2px;
+    top: 0;
+    border: none;
 
     &:after{
-      left: 5px;
+      left: 9px;
       top: 1px;
-      width: 5px;
-      height: 10px;
+      width: 10px;
+      height: 20px;
+      border-width: 0 2px 2px 0;
     }
   }
   
   .checkbox-container{
-    width: 25px;
+    width: 45px;
     padding: 0;
     margin: 0;
+  }
+
+  textarea.task-input-textarea{
+    height: 30px !important;
+    padding: 0 6px;
+    line-height: 30px;
   }
 }
 .task-section a{
@@ -158,4 +172,8 @@ input::selection, textarea::selection,
 }
 #completed-tasks{
   margin-bottom: 10px;
+}
+.create-task-input{
+  padding: 0 6px;
+  width: calc(100% - 12px);
 }
