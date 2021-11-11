@@ -1,3 +1,4 @@
 #!/bin/sh
 rm vscode-theme.zip
 zip -r vscode-theme.zip . -x build -x .\* -x \*.zip -x node_modules/\*
+exit 0
