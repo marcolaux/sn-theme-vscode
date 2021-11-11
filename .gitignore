@@ -1,2 +1,7 @@
 node_modules
 .sass-cache
+vscode-theme.zip
+.vscode/sftp.json
+package-lock.json
+dist.css.map
+dist.css
