@@ -2,9 +2,13 @@
 rm vscode-theme.zip
 zip -r vscode-theme.zip . -x build -x .\* -x \*.zip -x node_modules/\*
 
-if [ -d "$HOME/.config/standard-notes/Extensions/vscode-theme" ]; then
-  rm -fr $HOME/.config/standard-notes/Extensions/vscode-theme/*
-  unzip vscode-theme.zip -d $HOME/.config/standard-notes/Extensions/vscode-theme
+if [ -d "$HOME/.config/Standard Notes/Extensions/vscode-theme" ];
+then
+  rm -fr "$HOME/.config/Standard Notes/Extensions/vscode-theme/"*
+else
+  mkdir -p "$HOME/.config/Standard Notes/Extensions/vscode-theme"
 fi
+
+unzip vscode-theme.zip -d "$HOME/.config/Standard Notes/Extensions/vscode-theme"
 
 exit 0
