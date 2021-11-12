@@ -7,5 +7,5 @@ How to install:
 - Import Extension
 - https://laux.wtf/sn/vscode-theme/ext.json
 
-![screenshot](https://github.com/hyphone/vscode-theme/raw/master/screenshot.png)
+![screenshot](https://laux.wtf/sn/vscode-theme/screenshot.png)
 

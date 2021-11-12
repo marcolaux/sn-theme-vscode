@@ -1,6 +1,6 @@
 {
   "name": "vscode-theme",
-  "version": "1.1.2",
+  "version": "1.1.5",
   "main": "dist.css",
   "author": "Marco Laux",
   "sn": {
@@ -11,7 +11,7 @@
     "node-sass": "^6.0.1"
   },
   "scripts": {
-    "build": "node-sass src/main.scss dist.css --output-style compressed && ./build",
+    "build": "node-sass src/main.scss dist.css && ./build",
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
   }
 }
