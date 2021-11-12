@@ -2,8 +2,11 @@
   --sn-stylekit-theme-type: "dark";
   --sn-stylekit-theme-name: "vscode-theme";
   --sn-stylekit-base-font-size: 15px;
+
+  --sn-stylekit-monospace-font: "Noto Sans Mono", "DejaVu Sans Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, "Ubuntu Mono", "Courier New", monospace;
+  --sn-stylekit-sans-serif-font: "Cantarell", "Noto Sans", "DejaVu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", var(--sn-stylekit-simplified-chinese-font), sans-serif;
   
-  --background-1: #252526;
+  --background-1: #252525;
   --background-2: #1e1e1e;
   --foreground-color: #D4D4D4;
   // --border-color: #3d3e3d;
@@ -11,14 +14,24 @@
   --highlight-color: #0b4a73;
   --highlight-contrast: #083c5a;
 
+  --selected-note: #333;
+
   --commend-color: #9ad9fb;
   --pink: #c586c0;
+
+  --list-1: #e0c7ab;
+  --list-2: #d0e0ab;
+  --list-3: #abe0d3;
+  --list-4: #abc2e0;
+  --list-5: #b5abe0;
+  --list-5: #e0abdb;
+  --list-5: #e0abab;
 
   --selected: rgba(123, 167, 138, .99);  // fix too dark selection by chrome
   --selected-dark: #314136;
 
   --field-color: #3c3c3c;
-  --contrast-background-color-alt: #3c3c3c;
+  --contrast-background-color-alt: #2a2a2a;
 
   --sn-stylekit-menu-border: 1px solid var(--field-color);
 
@@ -69,6 +82,8 @@
   --sn-desktop-titlebar-border-color: var(--border-color);
   --sn-desktop-titlebar-ui-color: var(--foreground-color);
   --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
+
+  --sn-desktop-titlebar-icon-font-size: 13px;
 }
 
 .sn-button{
@@ -77,11 +92,10 @@
   }
 }
 
-.CodeMirror.CodeMirror-wrap{
-  font-family: "DejaVu Sans Mono", "Helvetica", "Arial", sans-serif;
-
+.CodeMirror{
   pre.CodeMirror-line,
   pre.CodeMirror-line-like{
+    font-family: var(--sn-stylekit-monospace-font);
     line-height: 1.33;
   }
 
@@ -89,24 +103,29 @@
     &.cm-formatting-list,
     &.cm-formatting-list-ul{
       &.cm-variable-2{
-        color: var(--sn-stylekit-neutral-color);
-      }
-      &.cm-variable-3{
-        color: var(--pink);
+        color: var(--list-1);
       }
     }
   }
 
   .cm-tab{
     & + .cm-variable-2{
-      color: var(--sn-stylekit-neutral-contrast-color);
+      color: var(--list-1);
     }
-    & + .cm-variable-3{
-      color: var(--pink);
-    }
-
     & + .cm-tab + .cm-variable-2{
-      color: var(--sn-stylekit-info-color);
+      color: var(--list-2);
+    }
+    & + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-3);
+    }
+    & + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-4);
+    }
+    & + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-5);
+    }
+    & + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-6);
     }
   }
 
@@ -128,7 +147,7 @@
 }
 
 #notes-column .note.selected, .notes .note.selected {
-  background-color: #37373d;
+  background-color: var(--selected-note);
   color: var(--sn-stylekit-contrast-foreground-color);
 }
 
@@ -164,6 +183,15 @@
 .editor-toolbar button,
 .editor-toolbar button i{
   color: var(--foreground-color) !important;
+}
+
+.sn-component.tags,
+.sn-component.tags #tags-content{
+  background-color: var(--contrast-background-color-alt);
+}
+
+#footer-bar{
+  border-top: none;
 }
 
 #notes-column .filter-section .filter-bar, .notes .filter-section .filter-bar,
