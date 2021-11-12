@@ -1,20 +1,17 @@
 {
   "name": "vscode-theme",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "main": "dist.css",
   "author": "Marco Laux",
   "sn": {
     "main": "dist.css"
   },
   "devDependencies": {
-    "chokidar": "^3.5.2",
     "chokidar-cli": "^3.0.0",
-    "node-sass": "^6.0.1",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.2"
+    "node-sass": "^6.0.1"
   },
   "scripts": {
-    "build": "node-sass src/main.scss dist.css --output-style compressed && postcss -r dist.css && ./build",
+    "build": "node-sass src/main.scss dist.css --output-style compressed && ./build",
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
   }
 }

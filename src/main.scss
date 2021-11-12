@@ -1,7 +1,7 @@
 :root {
-  --sn-stylekit-theme-type: dark;
-  --sn-stylekit-theme-name: vscode-theme;
-  --sn-stylekit-base-font-size: 14px;
+  --sn-stylekit-theme-type: "dark";
+  --sn-stylekit-theme-name: "vscode-theme";
+  --sn-stylekit-base-font-size: 15px;
   
   --background-1: #252526;
   --background-2: #1e1e1e;
@@ -65,6 +65,40 @@
   --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
 }
 
+.sn-button{
+  &+.sn-button{
+    margin-left: 1em;
+  }
+}
+
+.CodeMirror.CodeMirror-wrap{
+  font-family: "DejaVu Sans Mono", "Helvetica", "Arial", sans-serif;
+
+  pre.CodeMirror-line,
+  pre.CodeMirror-line-like{
+    line-height: 1.33;
+  }
+
+  .cm-formatting{
+    &.cm-formatting-list,
+    &.cm-formatting-list-ul{
+      &.cm-variable-2{
+        color: --sn-stylekit-neutral-color;
+      }
+    }
+  }
+
+  .cm-formatting-header,
+  .cm-formatting-strong,
+  .cm-formatting-em{
+    color: var(--sn-stylekit-neutral-color);
+  }
+
+  .cm-header{
+    color: var(--sn-stylekit-neutral-color);
+  }
+}
+
 #notes-column .note.selected, .notes .note.selected {
   background-color: #37373d;
   color: var(--sn-stylekit-contrast-foreground-color);
@@ -114,22 +148,6 @@
 .create-task-input,
 .task .checkmark{
   background-color: var(--field-color);
-}
-
-.CodeMirror-wrap{
-  pre.CodeMirror-line,
-  pre.CodeMirror-line-like{
-    line-height: 1.3;
-  }
-
-  .cm-formatting{
-    &.cm-formatting-list,
-    &.cm-formatting-list-ul{
-      &.cm-variable-2{
-        color: --sn-stylekit-neutral-color;
-      }
-    }
-  }
 }
 
 #editor-title-bar > .title > .input{
