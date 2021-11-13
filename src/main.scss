@@ -146,7 +146,8 @@
     color: var(--sn-stylekit-neutral-color);
   }
 
-  .CodeMirror-code{
+  // code editor
+  &.cm-s-default{
     .cm-comment{
       color: var(--comment-color);
     }
