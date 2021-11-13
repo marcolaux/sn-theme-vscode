@@ -144,6 +144,21 @@
       color: var(--commend-color);
     }
   }
+
+  .editor-preview{
+    line-height: 1.33;
+    
+    ol,
+    ul{
+      li{
+        margin-bottom: 0.5em;
+
+        > ul{
+          margin: 0.5em auto 0.75em auto;
+        }
+      }
+    }
+  }
 }
 
 #notes-column .note.selected, .notes .note.selected {
