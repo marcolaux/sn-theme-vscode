@@ -16,7 +16,14 @@
 
   --selected-note: #333;
 
-  --commend-color: #9ad9fb;
+  --comment-color: #6a9955;
+  --attribute-color: #ce9178;
+  --builtin-color: #c586c0;
+  --keyword-color: #569cd6;
+  --variable-2-code: #dcdcaa;
+  --def-color: #9cdcfe;
+  --string-color: #ce9178;
+  --number-color: #b5cea8;
   --pink: #c586c0;
 
   --list-1: #e0c7ab;
@@ -141,9 +148,46 @@
 
   .CodeMirror-code{
     .cm-comment{
-      color: var(--commend-color);
+      color: var(--comment-color);
+    }
+
+    .cm-attribute{
+      color: var(--attribute-color);
+    }
+
+    .cm-builtin{
+      color: var(--builtin-color);
+    }
+
+    .cm-keyword{
+      color: var(--keyword-color);
+    }
+
+    .cm-def{
+      color: var(--def-color);
+    }
+
+    .cm-variable-2{
+      color: var(--variable-2-code) !important;
+    }
+
+    .cm-variable{
+      color: var(--def-color) !important;
+    }
+
+    .cm-string{
+      color: var(--string-color);
+    }
+
+    .cm-number{
+      color: var(--number-color);
+    }
+
+    .cm-atom{
+      color: var(--keyword-color);
     }
   }
+
 
   .editor-preview{
     line-height: 1.33;
