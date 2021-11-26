@@ -1,21 +1,25 @@
 {
   "name": "vscode-theme",
   "description": "A theme for Standard Notes inspired by the VS Code Dark theme.",
-  "version": "1.1.19",
+  "version": "1.1.20",
   "license": "GPL-3.0",
   "main": "dist.css",
   "author": "Marco Laux",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-newer": "^1.2.0",
-    "grunt-contrib-sass": "^1.0.0"
+    "grunt-newer": "^1.2.0"
   },
   "sn": {
     "main": "dist/dist.css"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/xthursdayx/sn-theme-vscode.git"
+    "url": "git://github.com/hyphone/sn-theme-vscode.git"
+  },
+  "scripts": {
+    "watch": "grunt watch",
+    "sass": "grunt sass"
   }
 }
