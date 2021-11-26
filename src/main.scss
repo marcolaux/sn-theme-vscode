@@ -91,245 +91,244 @@
   --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
 
   --sn-desktop-titlebar-icon-font-size: 13px;
+}
 
-  .sn-button{
-    &+.sn-button{
-      margin-left: 1em;
-    }
+.sn-button{
+  &+.sn-button{
+    margin-left: 1em;
+  }
+}
+
+.CodeMirror{
+  pre.CodeMirror-line,
+  pre.CodeMirror-line-like{
+    font-family: var(--sn-stylekit-monospace-font);
+    line-height: 1.33;
   }
 
-  .CodeMirror{
-    pre.CodeMirror-line,
-    pre.CodeMirror-line-like{
-      font-family: var(--sn-stylekit-monospace-font);
-      line-height: 1.33;
-    }
-
-    .cm-formatting{
-      &.cm-formatting-list,
-      &.cm-formatting-list-ul{
-        &.cm-variable-2{
-          color: var(--list-1);
-        }
-      }
-    }
-
-    .cm-tab{
-      & + .cm-variable-2{
+  .cm-formatting{
+    &.cm-formatting-list,
+    &.cm-formatting-list-ul{
+      &.cm-variable-2{
         color: var(--list-1);
       }
-      & + .cm-tab + .cm-variable-2{
-        color: var(--list-2);
-      }
-      & + .cm-tab + .cm-tab + .cm-variable-2{
-        color: var(--list-3);
-      }
-      & + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
-        color: var(--list-4);
-      }
-      & + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
-        color: var(--list-5);
-      }
-      & + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
-        color: var(--list-6);
-      }
+    }
+  }
+
+  .cm-tab{
+    & + .cm-variable-2{
+      color: var(--list-1);
+    }
+    & + .cm-tab + .cm-variable-2{
+      color: var(--list-2);
+    }
+    & + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-3);
+    }
+    & + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-4);
+    }
+    & + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-5);
+    }
+    & + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-tab + .cm-variable-2{
+      color: var(--list-6);
+    }
+  }
+
+  .cm-formatting-header,
+  .cm-formatting-strong,
+  .cm-formatting-em{
+    color: var(--sn-stylekit-warning-color);
+  }
+
+  .cm-header{
+    color: var(--sn-stylekit-neutral-color);
+  }
+
+  // code editor
+  &.cm-s-default{
+    .cm-comment{
+      color: var(--comment-color);
     }
 
-    .cm-formatting-header,
-    .cm-formatting-strong,
-    .cm-formatting-em{
-      color: var(--sn-stylekit-warning-color);
+    .cm-attribute{
+      color: var(--attribute-color);
     }
 
-    .cm-header{
-      color: var(--sn-stylekit-neutral-color);
+    .cm-builtin{
+      color: var(--builtin-color);
     }
 
-    // code editor
-    &.cm-s-default{
-      .cm-comment{
-        color: var(--comment-color);
-      }
-
-      .cm-attribute{
-        color: var(--attribute-color);
-      }
-
-      .cm-builtin{
-        color: var(--builtin-color);
-      }
-
-      .cm-keyword{
-        color: var(--keyword-color);
-      }
-
-      .cm-def{
-        color: var(--def-color);
-      }
-
-      .cm-variable-2{
-        color: var(--variable-2-code) !important;
-      }
-
-      .cm-variable{
-        color: var(--def-color) !important;
-      }
-
-      .cm-string{
-        color: var(--string-color);
-      }
-
-      .cm-number{
-        color: var(--number-color);
-      }
-
-      .cm-atom{
-        color: var(--keyword-color);
-      }
+    .cm-keyword{
+      color: var(--keyword-color);
     }
 
-    .editor-preview{
-      line-height: 1.33;
-      
-      ol,
-      ul{
-        li{
-          margin-bottom: 0.5em;
+    .cm-def{
+      color: var(--def-color);
+    }
 
-          > ul{
-            margin: 0.5em auto 0.75em auto;
-          }
+    .cm-variable-2{
+      color: var(--variable-2-code) !important;
+    }
+
+    .cm-variable{
+      color: var(--def-color) !important;
+    }
+
+    .cm-string{
+      color: var(--string-color);
+    }
+
+    .cm-number{
+      color: var(--number-color);
+    }
+
+    .cm-atom{
+      color: var(--keyword-color);
+    }
+  }
+
+  .editor-preview{
+    line-height: 1.33;
+    
+    ol,
+    ul{
+      li{
+        margin-bottom: 0.5em;
+
+        > ul{
+          margin: 0.5em auto 0.75em auto;
         }
       }
     }
   }
+}
 
-  #notes-column .note.selected, .notes .note.selected {
-    background-color: var(--selected-note);
-    color: var(--sn-stylekit-contrast-foreground-color);
-  }
+#notes-column .note.selected, .notes .note.selected {
+  background-color: var(--selected-note);
+  color: var(--sn-stylekit-contrast-foreground-color);
+}
 
-  .sn-component .sk-button.info, .sn-component .info.sk-box, .sn-component .sk-box.info, .sn-component .sk-circle.info{
-    background-color: var(--sn-stylekit-foreground-color);
-  }
+.sn-component .sk-button.info, .sn-component .info.sk-box, .sn-component .sk-box.info, .sn-component .sk-circle.info{
+  background-color: var(--sn-stylekit-foreground-color);
+}
 
-  #notes-column .note progress[value]::-webkit-progress-value, .notes .note progress[value]::-webkit-progress-value{
-    background-color: var(--selected-dark);
-  }
-  #notes-column .note.selected progress[value]::-webkit-progress-value, .notes .note.selected progress[value]::-webkit-progress-value{
-    background-color: var(--sn-stylekit-info-color);
-  }
+#notes-column .note progress[value]::-webkit-progress-value, .notes .note progress[value]::-webkit-progress-value{
+  background-color: var(--selected-dark);
+}
+#notes-column .note.selected progress[value]::-webkit-progress-value, .notes .note.selected progress[value]::-webkit-progress-value{
+  background-color: var(--sn-stylekit-info-color);
+}
 
-  #editor,
-  .redactor-box.redactor-styles-on .redactor-toolbar,
-  .CodeMirror,
-  .editor-content, #editor-content,
-  #plus-editor .note-editor.fullscreen,
-  #plus-editor .note-editor,
-  #plus-editor .panel-default > .panel-heading,
-  #plus-editor .note-editor.note-frame.fullscreen .note-editable, #plus-editor .note-editor.note-frame.fullscreen .panel-body{
-    background-color: var(--background-2);
-  }
+#editor,
+.redactor-box.redactor-styles-on .redactor-toolbar,
+.CodeMirror,
+.editor-content, #editor-content,
+#plus-editor .note-editor.fullscreen,
+#plus-editor .note-editor,
+#plus-editor .panel-default > .panel-heading,
+#plus-editor .note-editor.note-frame.fullscreen .note-editable, #plus-editor .note-editor.note-frame.fullscreen .panel-body{
+  background-color: var(--background-2);
+}
 
-  .editor-toolbar button,
-  .sn-component .sk-button.sk-secondary-contrast, .sn-component .sk-secondary-contrast.sk-box, .sn-component .sk-box.sk-secondary-contrast, .sn-component .sk-circle.sk-secondary-contrast,
-  .sn-component .sk-button.sk-secondary-contrast:before, .sn-component .sk-secondary-contrast.sk-box:before, .sn-component .sk-box.sk-secondary-contrast:before, .sn-component .sk-circle.sk-secondary-contrast:before,
-  .sn-component .sk-button.contrast, .sn-component .contrast.sk-box, .sn-component .sk-box.contrast, .sn-component .sk-circle.contrast,
-  .sn-component .sk-button.contrast:before, .sn-component .contrast.sk-box:before, .sn-component .sk-box.contrast:before, .sn-component .sk-circle.contrast:before{
-    color: var(--foreground-color);
-  }
-  .editor-toolbar button,
-  .editor-toolbar button i{
-    color: var(--foreground-color) !important;
-  }
+.editor-toolbar button,
+.sn-component .sk-button.sk-secondary-contrast, .sn-component .sk-secondary-contrast.sk-box, .sn-component .sk-box.sk-secondary-contrast, .sn-component .sk-circle.sk-secondary-contrast,
+.sn-component .sk-button.sk-secondary-contrast:before, .sn-component .sk-secondary-contrast.sk-box:before, .sn-component .sk-box.sk-secondary-contrast:before, .sn-component .sk-circle.sk-secondary-contrast:before,
+.sn-component .sk-button.contrast, .sn-component .contrast.sk-box, .sn-component .sk-box.contrast, .sn-component .sk-circle.contrast,
+.sn-component .sk-button.contrast:before, .sn-component .contrast.sk-box:before, .sn-component .sk-box.contrast:before, .sn-component .sk-circle.contrast:before{
+  color: var(--foreground-color);
+}
+.editor-toolbar button,
+.editor-toolbar button i{
+  color: var(--foreground-color) !important;
+}
 
-  .sn-component.tags,
-  .sn-component.tags #tags-content{
-    background-color: var(--contrast-background-color-alt);
-  }
+.sn-component.tags,
+.sn-component.tags #tags-content{
+  background-color: var(--contrast-background-color-alt);
+}
 
-  #footer-bar{
-    border-top: none;
-  }
+#footer-bar{
+  border-top: none;
+}
 
-  #notes-column .filter-section .filter-bar, .notes .filter-section .filter-bar,
-  .tags .tag:hover:not(.selected), .tags .tag.selected,
-  .sn-component .sk-menu-panel .sk-menu-panel-row:hover,
-  .sn-component .sk-button.sk-secondary-contrast, .sn-component .sk-secondary-contrast.sk-box, .sn-component .sk-box.sk-secondary-contrast, .sn-component .sk-circle.sk-secondary-contrast,
-  .sn-component .sk-button.sk-secondary-contrast:before, .sn-component .sk-secondary-contrast.sk-box:before, .sn-component .sk-box.sk-secondary-contrast:before, .sn-component .sk-circle.sk-secondary-contrast:before,
-  .sn-component .sk-button.contrast, .sn-component .contrast.sk-box, .sn-component .sk-box.contrast, .sn-component .sk-circle.contrast,
-  .sn-component .sk-button.contrast:before, .sn-component .contrast.sk-box:before, .sn-component .sk-box.contrast:before, .sn-component .sk-circle.contrast:before,
-  .create-task-input,
-  .task .checkmark{
-    background-color: var(--field-color);
-  }
+#notes-column .filter-section .filter-bar, .notes .filter-section .filter-bar,
+.tags .tag:hover:not(.selected), .tags .tag.selected,
+.sn-component .sk-menu-panel .sk-menu-panel-row:hover,
+.sn-component .sk-button.sk-secondary-contrast, .sn-component .sk-secondary-contrast.sk-box, .sn-component .sk-box.sk-secondary-contrast, .sn-component .sk-circle.sk-secondary-contrast,
+.sn-component .sk-button.sk-secondary-contrast:before, .sn-component .sk-secondary-contrast.sk-box:before, .sn-component .sk-box.sk-secondary-contrast:before, .sn-component .sk-circle.sk-secondary-contrast:before,
+.sn-component .sk-button.contrast, .sn-component .contrast.sk-box, .sn-component .sk-box.contrast, .sn-component .sk-circle.contrast,
+.sn-component .sk-button.contrast:before, .sn-component .contrast.sk-box:before, .sn-component .sk-box.contrast:before, .sn-component .sk-circle.contrast:before,
+.create-task-input,
+.task .checkmark{
+  background-color: var(--field-color);
+}
 
-  #editor-title-bar > .title > .input{
-    color: var(--foreground-color);
-  }
-  #editor-title-bar > .title > .input:focus,
-  input:focus,
-  textarea:focus,
-  .task textarea.task-input-textarea:focus,
-  .task .checkbox-container input:focus+.checkmark{
-    background-color: var(--field-color);
-  }
-  #editor-title-bar > .title > .input::selection,
-  input::selection, textarea::selection,
-  *::selection{
-    background: var(--selected) !important;
-    color: var(--background-2) !important;
-  }
+#editor-title-bar > .title > .input{
+  color: var(--foreground-color);
+}
+#editor-title-bar > .title > .input:focus,
+input:focus,
+textarea:focus,
+.task textarea.task-input-textarea:focus,
+.task .checkbox-container input:focus+.checkmark{
+  background-color: var(--field-color);
+}
+#editor-title-bar > .title > .input::selection,
+input::selection, textarea::selection,
+*::selection{
+  background: var(--selected) !important;
+  color: var(--background-2) !important;
+}
 
-  .redactor-modal button.redactor-button-unstyled{
-    color: var(--sn-stylekit-contrast-foreground-color) !important;
-  }
+.redactor-modal button.redactor-button-unstyled{
+  color: var(--sn-stylekit-contrast-foreground-color) !important;
+}
 
-  .redactor-modal button.redactor-button-danger{
-    color: var(--sn-stylekit-danger-color) !important;
-    background-color: var(--sn-stylekit-danger-contrast-color) !important;
-  }
+.redactor-modal button.redactor-button-danger{
+  color: var(--sn-stylekit-danger-color) !important;
+  background-color: var(--sn-stylekit-danger-contrast-color) !important;
+}
 
-  .task{
-    margin-bottom: 15px;
+.task{
+  margin-bottom: 15px;
 
-    .checkmark{
-      height: 30px;
-      width: 30px;
-      margin: 0;
-      top: 0;
-      border: none;
+  .checkmark{
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    top: 0;
+    border: none;
 
-      &:after{
-        left: 9px;
-        top: 1px;
-        width: 10px;
-        height: 20px;
-        border-width: 0 2px 2px 0;
-      }
-    }
-    
-    .checkbox-container{
-      width: 45px;
-      padding: 0;
-      margin: 0;
-    }
-
-    textarea.task-input-textarea{
-      height: 30px !important;
-      padding: 0 6px;
-      line-height: 30px;
+    &:after{
+      left: 9px;
+      top: 1px;
+      width: 10px;
+      height: 20px;
+      border-width: 0 2px 2px 0;
     }
   }
-  .task-section a{
-    font-size: 12px;
+  
+  .checkbox-container{
+    width: 45px;
+    padding: 0;
+    margin: 0;
   }
-  #completed-tasks{
-    margin-bottom: 10px;
-  }
-  .create-task-input{
+
+  textarea.task-input-textarea{
+    height: 30px !important;
     padding: 0 6px;
-    width: calc(100% - 12px);
+    line-height: 30px;
   }
-
+}
+.task-section a{
+  font-size: 12px;
+}
+#completed-tasks{
+  margin-bottom: 10px;
+}
+.create-task-input{
+  padding: 0 6px;
+  width: calc(100% - 12px);
 }

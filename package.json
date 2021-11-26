@@ -5,12 +5,6 @@
   "license": "GPL-3.0",
   "main": "dist/dist.css",
   "author": "Marco Laux",
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-newer": "^1.2.0"
-  },
   "sn": {
     "main": "dist/dist.css"
   },
@@ -19,9 +13,11 @@
     "url": "git://github.com/hyphone/sn-theme-vscode.git"
   },
   "scripts": {
-    "watch": "grunt watch",
-    "sass": "grunt sass",
-    "build": "grunt sass && ./build.sh",
-    "debug": "grunt sass && ./build.sh debug"
+    "build": "node-sass src/main.scss dist/dist.css",
+    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial && ./build debug"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "node-sass": "^6.0.1"
   }
 }
