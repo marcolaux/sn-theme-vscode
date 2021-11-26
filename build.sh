@@ -2,6 +2,10 @@
 rm sn-vscode-theme.zip
 zip -r sn-vscode-theme.zip . -x build -x .\* -x \*.zip -x node_modules/\*
 
+if [ -z $1 ]; then
+   exit 0
+fi
+
 if [ $1 = "debug" ]; then
   unameOut="$(uname -s)"
   case "${unameOut}" in
