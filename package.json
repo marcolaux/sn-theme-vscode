@@ -6,14 +6,14 @@
   "main": "dist.css",
   "author": "Marco Laux",
   "sn": {
-    "main": "dist/dist.css"
+    "main": "dist.css"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/hyphone/sn-theme-vscode.git"
   },
   "scripts": {
-    "build": "node-sass src/main.scss dist/dist.css",
+    "build": "node-sass src/main.scss dist.css",
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial && ./build debug"
   },
   "devDependencies": {
