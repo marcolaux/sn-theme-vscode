@@ -1,7 +1,7 @@
 {
   "name": "sn-vscode-theme",
   "description": "A theme for Standard Notes inspired by the VS Code Dark theme that is easy to the eyes.",
-  "version": "1.1.22",
+  "version": "1.1.23",
   "license": "GPL-3.0",
   "main": "dist/dist.css",
   "author": "Marco Laux",
@@ -20,6 +20,8 @@
   },
   "scripts": {
     "watch": "grunt watch",
-    "sass": "grunt sass"
+    "sass": "grunt sass",
+    "build": "grunt sass && ./build.sh",
+    "debug": "grunt sass && ./build.sh debug"
   }
 }
