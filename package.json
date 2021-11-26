@@ -1,20 +1,21 @@
 {
   "name": "sn-vscode-theme",
   "description": "A theme for Standard Notes inspired by the VS Code Dark theme that is easy to the eyes.",
-  "version": "1.1.25",
+  "version": "1.1.27",
   "license": "GPL-3.0",
-  "main": "dist.css",
+  "main": "dist/dist.css",
   "author": "Marco Laux",
   "sn": {
-    "main": "dist.css"
+    "main": "dist/dist.css"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/hyphone/sn-theme-vscode.git"
   },
   "scripts": {
-    "build": "node-sass src/main.scss dist.css",
-    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial && ./build debug"
+    "sass": "node-sass src/main.scss dist/dist.css",
+    "build": "npm run sass && ./build.sh",
+    "watch": "chokidar \"**/*.scss\" -c \"npm run sass\" --initial && ./build.sh debug"
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
