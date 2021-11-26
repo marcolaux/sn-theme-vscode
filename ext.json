@@ -3,9 +3,9 @@
   "name": "VS Code Theme",
   "content_type": "SN|Theme",
   "area": "themes",
-  "version": "1.1.27",
+  "version": "1.1.28",
   "download_url": "https://raw.githubusercontent.com/hyphone/sn-theme-vscode/master/sn-vscode-theme.zip",
-  "url": "https://raw.githubusercontent.com/hyphone/sn-theme-vscode/master/dist/dist.css",
+  "url": "https://raw.githubusercontent.com/hyphone/sn-theme-vscode/master/dist.css",
   "latest_url": "https://raw.githubusercontent.com/hyphone/sn-theme-vscode/master/ext.json",
   "thumbnail_url": "https://raw.githubusercontent.com/hyphone/sn-theme-vscode/master/screenshot.png",
   "dock_icon": {

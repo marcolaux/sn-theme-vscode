@@ -1,19 +1,19 @@
 {
   "name": "sn-vscode-theme",
   "description": "A theme for Standard Notes inspired by the VS Code Dark theme that is easy to the eyes.",
-  "version": "1.1.27",
+  "version": "1.1.28",
   "license": "GPL-3.0",
   "main": "dist.css",
   "author": "Marco Laux",
   "sn": {
-    "main": "dist/dist.css"
+    "main": "dist.css"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/hyphone/sn-theme-vscode.git"
   },
   "scripts": {
-    "sass": "node-sass src/main.scss dist/dist.css",
+    "sass": "node-sass src/main.scss dist.css",
     "build": "npm run sass && ./build.sh",
     "watch": "chokidar \"**/*.scss\" -c \"npm run sass\" --initial && ./build.sh debug"
   },
