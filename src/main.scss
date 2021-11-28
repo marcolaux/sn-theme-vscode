@@ -1,10 +1,10 @@
 :root {
   --sn-stylekit-theme-type: "dark";
-  --sn-stylekit-theme-name: "vscode-theme";
-  --sn-stylekit-base-font-size: 15px;
+  --sn-stylekit-theme-name: "sn-vscode-theme";
+  --sn-stylekit-base-font-size: 14px;
 
-  --sn-stylekit-monospace-font: "Noto Sans Mono", "DejaVu Sans Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, "Ubuntu Mono", "Courier New", monospace;
-  --sn-stylekit-sans-serif-font: "Cantarell", "Noto Sans", "DejaVu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", var(--sn-stylekit-simplified-chinese-font), sans-serif;
+  --sn-stylekit-monospace-font: "Noto Sans Mono", "DejaVu Sans Mono", monospace;
+  --sn-stylekit-sans-serif-font: "Cantarell", "Noto Sans", "DejaVu Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",  "Fira Sans", "Droid Sans", "Helvetica Neue", var(--sn-stylekit-simplified-chinese-font), sans-serif;
   
   --background-1: #252525;
   --background-2: #1e1e1e;
@@ -26,7 +26,7 @@
   --number-color: #b5cea8;
   --pink: #c586c0;
 
-  --list-1: #e0c7ab;
+  --list-1: #d7c9b9;
   --list-2: #d0e0ab;
   --list-3: #abe0d3;
   --list-4: #abc2e0;
@@ -144,6 +144,7 @@
 
   .cm-header{
     color: var(--sn-stylekit-neutral-color);
+    line-height: 1.5em;
   }
 
   // code editor
@@ -202,6 +203,13 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 526px){
+  .EasyMDEContainer .CodeMirror-fullscreen{
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
