@@ -213,20 +213,33 @@
   }
 }
 
-#notes-column .note.selected, .notes .note.selected {
-  background-color: var(--selected-note);
-  color: var(--sn-stylekit-contrast-foreground-color);
+#notes-column,
+.notes{
+  .note{
+    &:hover,
+    &.hover{
+      background-color: var(--sn-stylekit-warning-contrast-color);
+    }
+
+    &.selected{
+      background-color: var(--selected-note);
+      color: var(--sn-stylekit-contrast-foreground-color);
+
+      progress[value]::-webkit-progress-value,
+      progress[value]::-webkit-progress-value{
+        background-color: var(--sn-stylekit-info-color);
+      }
+    }
+
+    progress[value]::-webkit-progress-value,
+    progress[value]::-webkit-progress-value{
+      background-color: var(--selected-dark);
+    }
+  }
 }
 
 .sn-component .sk-button.info, .sn-component .info.sk-box, .sn-component .sk-box.info, .sn-component .sk-circle.info{
   background-color: var(--sn-stylekit-foreground-color);
-}
-
-#notes-column .note progress[value]::-webkit-progress-value, .notes .note progress[value]::-webkit-progress-value{
-  background-color: var(--selected-dark);
-}
-#notes-column .note.selected progress[value]::-webkit-progress-value, .notes .note.selected progress[value]::-webkit-progress-value{
-  background-color: var(--sn-stylekit-info-color);
 }
 
 #editor,

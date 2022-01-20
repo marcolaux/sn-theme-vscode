@@ -18,15 +18,15 @@ if [ $1 = "debug" ]; then
 
   if [ $machine == "Linux" ];
   then
-    if [ -d "$HOME/.config/Standard Notes/Extensions/vscode-theme" ];
+    if [ -d "$HOME/.var/app/org.standardnotes.standardnotes/config/Standard Notes/Extensions/vscode-theme" ];
     then
-      rm -fr "$HOME/.config/Standard Notes/Extensions/vscode-theme/"*
+      rm -fr "$HOME/.var/app/org.standardnotes.standardnotes/config/Standard Notes/Extensions/vscode-theme/"*
     else
-      mkdir -p "$HOME/.config/Standard Notes/Extensions/vscode-theme"
+      mkdir -p "$HOME/.var/app/org.standardnotes.standardnotes/config/Standard Notes/Extensions/vscode-theme"
     fi
   fi
 
-  unzip sn-vscode-theme.zip -d "$HOME/.config/Standard Notes/Extensions/vscode-theme"
+  unzip sn-vscode-theme.zip -d "$HOME/.var/app/org.standardnotes.standardnotes/config/Standard Notes/Extensions/vscode-theme"
 fi
 
 exit 0
