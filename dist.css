@@ -27,6 +27,7 @@
   --list-5: #b5abe0;
   --list-5: #e0abdb;
   --list-5: #e0abab;
+  --navigation-item-selected-background-color: var(--selected-dark);
   --selected: rgba(123, 167, 138, .99);
   --selected-dark: #314136;
   --field-color: #3c3c3c;
@@ -36,7 +37,7 @@
   --sn-stylekit-info-contrast-color: #25412f;
   --sn-stylekit-neutral-color: #bea18a;
   --sn-stylekit-neutral-contrast-color: #e7ddd2;
-  --sn-stylekit-list-item-highlight-color: --sn-stylekit-neutral-color;
+  --sn-stylekit-list-item-highlight-color: var(--sn-stylekit-neutral-color);
   --sn-stylekit-success-color: #6ab785;
   --sn-stylekit-success-contrast-color: #25412f;
   --sn-stylekit-warning-color: #ddbc8a;
@@ -69,6 +70,16 @@
 
 .sn-button + .sn-button {
   margin-left: 1em; }
+
+.text-passive-1 {
+  color: var(--number-color); }
+
+input:focus {
+  background-color: transparent; }
+
+#navigation .tag.selected {
+  background-color: var(--item-cell-selected-background-color);
+  border-left: 2px solid var(--item-cell-selected-border-left-color); }
 
 .CodeMirror pre.CodeMirror-line,
 .CodeMirror pre.CodeMirror-line-like {
