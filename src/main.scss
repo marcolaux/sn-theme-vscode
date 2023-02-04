@@ -14,6 +14,21 @@
   --highlight-color: #0b4a73;
   --highlight-contrast: #083c5a;
 
+  /* 
+  md alternative
+  */
+  --shadow: 59,66,82;
+  --primary: 94,129,172;
+  --secondary: 129,161,193;
+  --neutral: 236,239,244;
+  --solid: 216,222,233;
+  --line: 67,76,94;
+  --background: 37,37,37;
+  --surface: 46,52,64;
+  --typography: var(--sn-stylekit-sans-serif-font);
+  --radius: 4px;
+  --lineWidth: 1px;
+
   --selected-note: #333;
 
   --comment-color: #6a9955;
@@ -114,6 +129,13 @@ input:focus {
     background-color: var(--item-cell-selected-background-color);
     border-left: 2px solid var(--item-cell-selected-border-left-color);
   }
+}
+
+.milkdown-mroh9g pre,
+.milkdown-mroh9g code,
+.milkdown-mroh9g code *{
+  font-family: var(--sn-stylekit-monospace-font);
+  line-height: 1.33;
 }
 
 .CodeMirror{
@@ -260,6 +282,7 @@ input:focus {
 }
 
 #editor,
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .editor,
 .redactor-box.redactor-styles-on .redactor-toolbar,
 .CodeMirror,
 .editor-content, #editor-content,
@@ -268,6 +291,20 @@ input:focus {
 #plus-editor .panel-default > .panel-heading,
 #plus-editor .note-editor.note-frame.fullscreen .note-editable, #plus-editor .note-editor.note-frame.fullscreen .panel-body{
   background-color: var(--background-2);
+}
+
+.redactor-styles code,
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .editor .code-inline {
+  background-color: var(--selected-note);
+  color: var(--foreground-color);
+}
+
+.redactor-styles pre, .redactor-styles pre code {
+  background-color: var(--selected-note);
+  color: var(--foreground-color);
+  padding: 1em 1.3em;
+  border-radius: 4px;
+  font-size: 100%;
 }
 
 .editor-toolbar button,

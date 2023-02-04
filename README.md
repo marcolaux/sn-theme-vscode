@@ -1,5 +1,17 @@
 # vscode-theme
 
+## Unmaintained !
+
+This Theme is unmaintained at this moment.
+
+As the Super Editor and Standard Notes itself has made so much progress within the last year I can't keep up with the pace at this stage.
+
+This theme was mostly optimized for the Markdown Editor. I also for some time exclusivly use the Super Editor and the built in themes.
+
+I hope that some people enjoyed this theme for that what it is and was.
+
+---
+
 A theme for Standard Notes inspired by the VS Code Dark theme.
 
 How to install:
