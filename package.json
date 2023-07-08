@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
-    "node-sass": "^7.0.3"
+    "node-sass": "^9.0.0"
   }
 }
